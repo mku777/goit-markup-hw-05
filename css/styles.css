@@ -105,6 +105,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -135,6 +139,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .link:hover,
@@ -206,6 +214,10 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
   height: 50px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Sections */
@@ -394,7 +406,12 @@ section .hero {
   background-color: var(--primary-bg-color);
   color: #AFB1B8;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .social-media-link:hover {
   background-color:var(--accent-color);
@@ -446,7 +463,13 @@ section .hero {
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .client-company li + li {
   margin-left: 30px;
@@ -487,7 +510,12 @@ section .hero {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .adress-nav .rgb-color {
   color: rgba(255, 255, 255, 0.6);
@@ -560,7 +588,12 @@ margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   padding: 0;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .social-link-footer:hover {
 background-color: var(--accent-color);
@@ -593,7 +626,12 @@ background-color: var(--accent-color);
   line-height: 1.62;
   letter-spacing: 0.03em;
   border: 0;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* Portfolio Page buttons */
 
@@ -620,6 +658,25 @@ background-color: var(--accent-color);
 
 
 /* Portfolio page titles */
+
+.product-thumb {
+  position: relative;
+}
+
+.product-thumb::after {
+  display: inline-block;
+  position: absolute;
+  content:"";
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  top: 0;
+  left: 0;
+}
+
+.product-text {
+
+}
 
 .projects-image {
   display: block;
@@ -673,3 +730,32 @@ background-color: var(--accent-color);
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
+
+
+/* Модальное окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+  
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--primary-bg-color);
+  }
