@@ -408,6 +408,7 @@ section .hero {
   border-radius: 50%;
 
   transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -465,6 +466,7 @@ section .hero {
   padding-right: 32px;
 
   transition-property: background-color;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
