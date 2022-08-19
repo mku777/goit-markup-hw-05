@@ -161,6 +161,7 @@ transform: scaleX(1.09);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
@@ -677,24 +678,46 @@ background-color: var(--accent-color);
 
 /* Portfolio page titles */
 
-.product-thumb {
-  position: relative;
+.project-link {
+  text-decoration: none;
 }
 
-.product-thumb::after {
-  display: inline-block;
-  position: absolute;
-  content:"";
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color);
-  top: 0;
-  left: 0;
+.product-thumb {
+position: relative;
+overflow: hidden;
+}
+
+.projects-list .projects-flex:hover .product-text,
+.projects-list .project-link:focus .product-text {
+transform: translateY(0);
 }
 
 .product-text {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 24px;
+padding-right: 24px;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+transform: translateY(100%);
+transition: transform 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.product-text p {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: var(--primary-bg-color);
+}
+
 
 .projects-image {
   display: block;
