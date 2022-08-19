@@ -118,7 +118,8 @@ ul {
 
 .link.current {
   position: relative;
-  
+ padding-right: 2px;
+ padding-left: 2px;
   color: var(--accent-color);
 
 }
@@ -128,16 +129,13 @@ position: absolute;
 top: 46px;
 left: 0;
 content: " ";
-display: inline-block;
+display: block;
 width: 100%;
 height: 4px;
 border-radius: 2px;
 background-color: var(--accent-color);
 }
 
-.link.current:hover {
-  
-}
 
 .auth-nav {
   display: flex;
