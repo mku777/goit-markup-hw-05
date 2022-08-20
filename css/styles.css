@@ -35,6 +35,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -692,7 +696,7 @@ background-color: var(--accent-color);
   line-height: 1.62;
   letter-spacing: 0.03em;
   border: 0;
-
+  transition-property: color;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -824,6 +828,7 @@ color: var(--primary-bg-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 
