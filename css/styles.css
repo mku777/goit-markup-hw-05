@@ -165,6 +165,12 @@ transform: scaleX(1.09);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.auth-nav svg {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -457,14 +463,11 @@ color:var(--primary-bg-color);
 
 /* Our team social link */
 
-
 .link-icon use {
-  transition-property: background-color;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .social-link-list {
   display: block;
@@ -483,7 +486,7 @@ color:var(--primary-bg-color);
   color: #AFB1B8;
   border-radius: 50%;
   
-  transition-property: background-color, color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
