@@ -482,8 +482,11 @@ color:var(--primary-bg-color);
   background-color: var(--primary-bg-color);
   color: #AFB1B8;
   border-radius: 50%;
+  
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .social-media-link:hover {
   background-color:var(--accent-color);
@@ -515,6 +518,9 @@ color:var(--primary-bg-color);
   fill: currentColor;
   margin-top: auto;
   margin-bottom: auto;
+
+
+
 }
 
 .client-company {
@@ -522,11 +528,6 @@ color:var(--primary-bg-color);
   align-items: center;
 }
 
-.client-company svg {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .client-button {
   display:block;
@@ -541,15 +542,11 @@ color:var(--primary-bg-color);
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
-  transition-property: background-color;
-  transition-property: border;
+
+  transition-property: color, border;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .client-company li + li {
   margin-left: 30px;
