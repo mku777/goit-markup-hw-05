@@ -549,10 +549,17 @@ color:var(--primary-bg-color);
   padding-left: 32px;
   padding-right: 32px;
 
-  transition-property: color, border;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.client-button svg {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .client-company li + li {
   margin-left: 30px;
