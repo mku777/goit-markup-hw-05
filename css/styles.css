@@ -716,8 +716,7 @@ background-color: var(--accent-color);
   line-height: 1.62;
   letter-spacing: 0.03em;
   border: 0;
-  transition-property: color;
-  transition-property: background-color;
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
